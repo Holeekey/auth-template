@@ -4,11 +4,8 @@ import { IncomingHttpHeaders } from 'http';
 
 import { AuthService } from './auth.service';
 import { RawHeaders, GetUser, Auth } from './decorators';
-import { RoleProtected } from './decorators/role-protected.decorator';
-
 import { CreateUserDto, LoginUserDto } from './dto';
 import { User } from './entities/user.entity';
-import { UserRoleGuard } from './guards/user-role.guard';
 import { ValidRoles } from './interfaces';
 
 @Controller('auth')
